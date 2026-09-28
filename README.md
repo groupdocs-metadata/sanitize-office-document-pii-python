@@ -8,14 +8,14 @@
 
 ## Overview
 
-sanitize-office-document-pii-python is a runnable Python demo that strips personally identifiable information from the metadata layer of Office files before they leave your organization. It is built on GroupDocs.Metadata for Python via .NET (package `groupdocs-metadata-net`, pinned to 26.5) and ships with a seeded DOCX so every step runs out of the box. Six documented functions cover four targeted removal passes, a one-call full sanitize, and a verification scan that proves the cleanup worked. The code targets developers who automate pre-publication checks for GDPR, ISO 27001, or client-confidentiality workflows.
+sanitize-office-document-pii-python is a runnable Python demo that strips personally identifiable information from the metadata layer of Office files before they leave your organization. It is built on GroupDocs.Metadata for Python via .NET (package `groupdocs-metadata-net`, pinned to 26.9.0) and ships with a seeded DOCX so every step runs out of the box. Six documented functions cover four targeted removal passes, a one-call full sanitize, and a verification scan that proves the cleanup worked. The code targets developers who automate pre-publication checks for GDPR, ISO 27001, or client-confidentiality workflows.
 
 ## Technology Stack
 
 - **Platform**: Python via .NET
 - **Product**: [GroupDocs.Metadata for Python via .NET](https://docs.groupdocs.com/metadata/python-net/)
 - **Language**: Python 3
-- **Dependency**: `groupdocs-metadata-net==26.5` (the only entry in `requirements.txt`)
+- **Dependency**: `groupdocs-metadata-net==26.9.0` (the only entry in `requirements.txt`)
 
 ## Problem Statement
 
@@ -44,7 +44,7 @@ Use the targeted functions when the file must stay useful after cleaning. A lega
 Before running the demo, ensure you have:
 
 - **Python 3** – any actively supported CPython release with pip available
-- **GroupDocs.Metadata package** – `pip install groupdocs-metadata-net==26.5`
+- **GroupDocs.Metadata package** – `pip install groupdocs-metadata-net==26.9.0`
 - **License (optional)** – without a license file the code runs in evaluation mode; set `LICENSE_PATH` in `main.py` to lift evaluation limits
 
 ## Getting Started
@@ -54,7 +54,7 @@ Before running the demo, ensure you have:
 **Using Package Manager:**
 
 ```bash
-pip install groupdocs-metadata-net==26.5
+pip install groupdocs-metadata-net==26.9.0
 ```
 
 **Manual Installation:**
@@ -95,7 +95,7 @@ sanitize-office-document-pii-python/
 ### File Descriptions
 
 - **main.py** – runs all six functions against the sample and asserts each result
-- **requirements.txt** – pins `groupdocs-metadata-net==26.5`
+- **requirements.txt** – pins `groupdocs-metadata-net==26.9.0`
 - **methods/remove_author_and_company.py** – tag-based removal of identity properties
 - **methods/clear_comments.py** – name-pattern removal of comment and reviewer fields
 - **methods/strip_revision_history.py** – clears revision counters and editing-time trails
